@@ -4,10 +4,10 @@ average="0"
 
 for num in $*
 do
-	$average="$(($average + $num))"
+	average="$(($average + $num))"
 done
 
-$average=$(($average / $#))
+average=$(($average / $#))
 
 echo "The average of $# is:$average"
 	
